@@ -14,6 +14,9 @@ RUN \
 WORKDIR /var/www/html/apt-repo/packages
 
 RUN \
+  chmod -R 777 .
+
+RUN \
   apt-rdepends \
     vim \
     cmake \
